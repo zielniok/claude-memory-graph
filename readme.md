@@ -17,6 +17,16 @@ knowledge-graph-viewer.html (browser)
 
 The Markdown files stay the source of truth. The graph is a searchable copy that the import rebuilds on every run.
 
+## Screenshots
+
+The viewer with `example-graph.jsonl`, the invented example data in this repository. Dots are memory entries, coloured by type. Diamonds are project folders.
+
+![Viewer showing the whole example graph](images/viewer-overview.png)
+
+A click on an entry opens its observations, its relations and the memory file it comes from.
+
+![Viewer with the entry backup-rotation selected and its details open](images/viewer-details.png)
+
 ## Contents
 
 | File | Purpose |

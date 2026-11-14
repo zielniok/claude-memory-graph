@@ -38,13 +38,23 @@ The viewer runs in the browser and does not depend on the operating system. It w
 
 The examples assume the repository is in `C:\tools\claude-memory-graph`. Use your own folder instead.
 
-### 1. Install the memory server
+### 1. Get the files
+
+Clone the repository into the folder where it should stay, for example `C:\tools`:
+
+```
+git clone https://github.com/zielniok/claude-memory-graph.git
+```
+
+This creates the folder `claude-memory-graph` with all files. Without Git, choose "Code" and then "Download ZIP" on the GitHub page of the repository and unpack the file.
+
+### 2. Install the memory server
 
 ```
 npm install -g @modelcontextprotocol/server-memory
 ```
 
-### 2. Register the server in Claude Code
+### 3. Register the server in Claude Code
 
 The server stores the graph in the file named by `MEMORY_FILE_PATH`. Point it to `knowledge-graph.jsonl` in the repository folder. With `--scope user` the server is available in every project.
 
@@ -62,7 +72,7 @@ claude mcp add memory-mcp --scope user -e "MEMORY_FILE_PATH=$HOME/tools/claude-m
 
 Restart Claude Code afterwards. The tools of the server appear as `mcp__memory-mcp__search_nodes` and so on.
 
-### 3. Configure the import
+### 4. Configure the import
 
 Copy `config-example.json` to `config.json` in the same folder and edit it. `config.json` is ignored by Git, so private paths stay on your machine.
 
@@ -84,7 +94,7 @@ Both layouts can be mixed, and you can name several roots.
 
 A memory file is expected to have frontmatter with `name`, `description` and, below `metadata`, `type` and `modified`, as in the example under Terms. A file without frontmatter is imported with its file name as name and the type `memory`. `MEMORY.md`, the index of a memory folder, is not imported.
 
-### 4. Run the import
+### 5. Run the import
 
 Check first what would happen. Nothing is written:
 
