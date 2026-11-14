@@ -27,10 +27,10 @@ Backups run nightly at 02:30. Seven daily and four weekly copies are kept on the
 |---|---|---|
 | Claude Code | current | Writes the memory files. Searches the graph with the tools of the memory server. |
 | Node.js | 24 or later | Runs the memory server. |
-| Python | 3.9 or later | The import script. No extra packages. |
+| Python | 3.8 or later | The import script. No extra packages. |
 | Browser | current | The viewer. |
 
-Tested on Windows 11 with Node.js 24.22, Python 3.10 and `@modelcontextprotocol/server-memory` 2.0.0. The import script and the commands in this guide are untested on macOS and Linux.
+Tested on Windows 11 with Node.js 24.22, Python 3.10 and `@modelcontextprotocol/server-memory` 2.0.0, and on Ubuntu 20.04 with Node.js 24.22, Python 3.8 and `@modelcontextprotocol/server-memory` 2.1.1. The import script and the commands in this guide are untested on macOS.
 
 The viewer runs in the browser and does not depend on the operating system. It was tested in Chromium and Firefox.
 
@@ -64,7 +64,7 @@ Windows, PowerShell:
 claude mcp add memory-mcp --scope user -e "MEMORY_FILE_PATH=C:\tools\claude-memory-graph\knowledge-graph.jsonl" -- node "$(npm root -g)\@modelcontextprotocol\server-memory\dist\index.js"
 ```
 
-macOS and Linux, with the repository in `~/tools/claude-memory-graph` (untested):
+Linux and macOS, with the repository in `~/tools/claude-memory-graph` (tested on Ubuntu, untested on macOS):
 
 ```bash
 claude mcp add memory-mcp --scope user -e "MEMORY_FILE_PATH=$HOME/tools/claude-memory-graph/knowledge-graph.jsonl" -- node "$(npm root -g)/@modelcontextprotocol/server-memory/dist/index.js"
@@ -92,7 +92,7 @@ Which root to name depends on where your memory files are:
 
 Both layouts can be mixed, and you can name several roots.
 
-A memory file is expected to have frontmatter with `name`, `description` and, below `metadata`, `type` and `modified`, as in the example under Terms. A file without frontmatter is imported with its file name as name and the type `memory`. `MEMORY.md`, the index of a memory folder, is not imported.
+A memory file is expected to have frontmatter with `name`, `description` and, below `metadata`, `type` and `modified`, as in the example under Terms. A file without frontmatter is imported with its file name as name and the type `memory`. `MEMORY.md`, the index of a memory folder, is not imported. A `memory` folder in `~/.claude/projects` is only imported if it contains `MEMORY.md`.
 
 ### 5. Run the import
 

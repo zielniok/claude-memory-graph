@@ -68,7 +68,7 @@ Entities and relations that Claude creates itself through the memory server are 
 - Observations that Claude adds to an imported entity are replaced by the next import. The import reports them as "Changed".
 - The search of the memory server is a plain substring search without ranking.
 - The lock file of the memory server protects the graph on one machine only. If the folder is synchronised between machines, do not write from two of them at the same time.
-- The import script and the setup commands are tested on Windows 11 only. The viewer runs in the browser on any operating system.
+- The import script and the setup commands are tested on Windows 11 and Ubuntu 20.04, not on macOS. The viewer runs in the browser on any operating system.
 
 ## License
 
