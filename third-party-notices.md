@@ -1,0 +1,33 @@
+# Third-party notices
+
+## vis-network
+
+`vis-network.min.js` is vis-network 10.1.2, unchanged, as published on cdnjs.
+
+- Project: https://visjs.github.io/vis-network/
+- SHA-512 (base64): `72kDhKs6XZBRuZiKolTT7OPsPzEd9KdAyeDXcYqIw4pKNoc1rpmBpKXTiitf55xARkiu/+jLQdOfQdxD1fmITg==`
+
+vis.js is dual licensed under the Apache 2.0 License and the MIT License and may be distributed under either. In this repository it is distributed under the MIT License. The copyright notices are those in the header of the file.
+
+```
+Copyright (c) 2011-2017 Almende B.V, http://almende.com
+Copyright (c) 2017-2019 visjs contributors, https://github.com/visjs
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```

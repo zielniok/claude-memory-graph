@@ -1,0 +1,10 @@
+{
+  "graph": "knowledge-graph.jsonl",
+  "roots": {
+    "projects": "~/.claude/projects"
+  },
+  "skip_dirs": [],
+  "skip_files": [],
+  "strip_prefix": "",
+  "max_depth": 8
+}

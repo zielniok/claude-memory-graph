@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# Third-party file, kept byte for byte so its checksum can be verified
+vis-network.min.js -text

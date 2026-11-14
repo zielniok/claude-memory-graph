@@ -1,0 +1,14 @@
+# Private data: the real graph, the server's lock and temporary files
+*.jsonl
+!example-graph.jsonl
+*.lock
+*.lock.break
+*.tmp
+
+# Local settings with private paths
+config.json
+
+# Claude Code settings and memory of this folder
+.claude/
+
+__pycache__/
